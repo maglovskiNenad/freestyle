@@ -1,0 +1,14 @@
+@import "../vector";
+
+@mixin large() {
+  //////////////////////////////////////////////////// FIRST SECTION //////////////////////////////////////////////////////
+  .first_section {
+    .img {
+      .centerd_text {
+        p {
+          font-size: 4.8em;
+        }
+      }
+    }
+  }
+}

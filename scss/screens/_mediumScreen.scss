@@ -1,0 +1,227 @@
+@import "../vector";
+
+@mixin medium() {
+  //////////////////////////////////////////////////// NAVBAR //////////////////////////////////////////////////////
+  header {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    section {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        font-size: 2.5em;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .menu {
+    display: block;
+    margin: 0 1em;
+    text-align: center;
+  }
+
+  .nav {
+    visibility: hidden;
+    transition: 0.2s ease;
+    filter: blur(4px);
+  }
+
+  .nav.active {
+    visibility: visible;
+    filter: none;
+  }
+  //////////////////////////////////////////////////// FIRST SECTION //////////////////////////////////////////////////////
+  .first_section {
+    .img {
+      .centerd_text {
+        p {
+          font-size: 3.7em;
+        }
+        top: 83%;
+        left: 10%;
+      }
+    }
+  }
+
+  //////////////////////////////////////////////////// SECOND SECTION //////////////////////////////////////////////////////
+
+  .secound_section {
+    display: block;
+    .description {
+      width: 80%;
+      padding-top: 10em;
+      h1 {
+        font-size: 1.7em;
+        letter-spacing: 2px;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .img_exemple {
+    display: flex;
+    justify-content: space-evenly;
+    top: 15%;
+    padding: 0;
+    width: 90%;
+    .img_one {
+      img {
+        width: 80%;
+        height: 10em;
+        filter: blur(4px);
+      }
+    }
+    .img_two {
+      bottom: 0;
+      left: 0;
+      img {
+        width: 80%;
+        height: 10em;
+        filter: blur(4px);
+      }
+    }
+    .img_three {
+      bottom: 0;
+      img {
+        width: 80%;
+        height: 10em;
+        filter: blur(4px);
+      }
+    }
+  }
+
+  //////////////////////////////////////////////////// THIRD SECTION //////////////////////////////////////////////////////
+
+  .third_section {
+    width: 100%;
+    height: 520px;
+  }
+
+  .main_text {
+    h1 {
+      font-size: 1.7em;
+    }
+    small {
+      font-size: 1em;
+    }
+  }
+
+  .blog_text {
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: justify;
+    .text {
+      font-size: 1em;
+    }
+    .user {
+      img {
+        width: 5em;
+        height: 5em;
+      }
+      p {
+        font-family: $navFont;
+        font-size: 1em;
+      }
+    }
+  }
+
+  .dots {
+    span {
+      width: 1em;
+      height: 1em;
+    }
+  }
+
+  //////////////////////////////////////////////////// FOURTH SECTION //////////////////////////////////////////////////////
+
+  .fourth_section {
+    height: 650px;
+    h1 {
+      font-size: 1.7em;
+      padding-top: 2.9em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .form_section {
+    .map {
+      iframe {
+        padding: 1em;
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  form {
+    input {
+      width: 350px;
+      height: 20px;
+    }
+
+    textarea {
+      width: 350px;
+      height: 40px;
+    }
+
+    .btn {
+      width: 367px;
+      height: 40px;
+    }
+  }
+
+  //////////////////////////////////////////////////// FOOTER ////////////////////////////////////////////////////
+
+  .first_text {
+    h1 {
+      font-size: 1em;
+    }
+    .table_one {
+      margin: 0 0;
+      ul {
+        padding: 0 0;
+        li {
+          padding: 0 5px;
+          a {
+            font-size: 0.9;
+          }
+        }
+      }
+    }
+  }
+
+  .secound_text {
+    .logo {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 1.5em;
+        height: 1.5em;
+        padding: 2.5em 1em 0 0;
+      }
+      p {
+        font-size: 2em;
+        letter-spacing: 2px;
+        font-family: $navFont;
+        color: $white;
+      }
+    }
+  }
+
+  .text {
+    small {
+      font-size: 0.5em;
+    }
+  }
+}

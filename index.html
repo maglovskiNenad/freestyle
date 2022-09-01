@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- Aluminia Sans Pinstare -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Rubik Maze -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Rubik+Maze&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="icon" href="img/logo/icon.png" />
+    <title>Freestyle</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="img/logo/icon.png" alt="logo" />
+      </section>
+      <nav class="nav">
+        <ul>
+          <li class="home"><a href="#">Home</a></li>
+          <li class="about">
+            <a href="#">About</a>
+          </li>
+          <li><a href="#" class="blog">Blog</a></li>
+          <li><a href="#" class="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <!-- FIRST SECTION -->
+      <section class="first_section" id="section1">
+        <div class="img">
+          <img src="img/nature_img/img-4.jpg" alt="nuture image" />
+          <div class="centerd_text">
+            <p>buying pictures has never been easier</p>
+          </div>
+        </div>
+      </section>
+      <!-- SECOND SECTION -->
+      <section class="secound_section" id="section2">
+        <div class="img_exemple">
+          <div class="img_one">
+            <img src="img/nature_img/img-1.jpg" alt="" />
+          </div>
+          <div class="img_two">
+            <img src="img/nature_img/img-2.jpg" alt="" />
+          </div>
+          <div class="img_three">
+            <img src="img/nature_img/img-3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="description">
+          <h1>Just try to be the best</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+            asperiores laborum aut sed fugit animi ipsa earum aliquid nesciunt
+            impedit, soluta at dolores quis ducimus quasi accusantium ratione
+            totam. Sapiente delectus sint necessitatibus amet quod accusamus ab
+            est consequatur iste iure, maiores repellat quis et pariatur libero
+            veritatis possimus beatae dicta sed quia repudiandae. Nulla
+            exercitationem necessitatibus blanditiis quo perspiciatis
+            accusantium quos nihil magni? Doloremque eaque nihil ducimus
+            nesciunt sunt, facere laboriosam molestiae ipsum. Quos libero magni
+            praesentium quas in nesciunt voluptatem alias distinctio aliquid
+            sequi, deleniti adipisci facilis reiciendis quam hic quae accusamus
+            velit impedit minima repellat? Laudantium, repudiandae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus
+            ipsa provident nostrum totam illo rem ea ullam dolor quae!
+          </p>
+        </div>
+      </section>
+
+      <!-- THIRD SECTION -->
+      <section class="third_section" id="section3">
+        <div class="main_text">
+          <h1>Our blog</h1>
+          <small>What our customers say about us.</small>
+        </div>
+        <div class="blog_text" onload="getNumber('1')">
+          <div class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+            quas aspernatur provident deserunt beatae officia fuga
+            excepturi,voluptas voluptate harum quis pariatur nam saepe quod.
+            Itaque,nesciunt! Aut id iusto itaque laboriosam voluptate, quo
+            repudiandae,illo officia excepturi in quam, iure distinctio quas
+            molestiae ipsalaborum! Repellendus totam quis dignissimos?
+          </div>
+          <div class="user">
+            <img src="img/blog_img/user-1.jpg" alt="" />
+            <p>Test Test</p>
+          </div>
+        </div>
+        <div class="dots_place">
+          <div class="dots"></div>
+        </div>
+      </section>
+      <!-- THIRD SECTION -->
+      <section class="fourth_section" id="section4">
+        <h1>Leave us a message</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          iusto natus inventore sunt. Facere magni laboriosam dignissimos sit,
+          eum provident a quas nemo quod, numquam neque fugiat qui ab voluptatem
+          cum. Officia quidem, eaque minus ab quaerat harum labore amet sed
+          aperiam, quos libero fuga, eligendi maxime iusto dolores dignissimos!
+        </p>
+        <div class="form_section">
+          <form>
+            <input
+              type="text"
+              id="name"
+              class="name"
+              placeholder="Enter your name..."
+            />
+            <br />
+
+            <input
+              type="text"
+              id="username"
+              class="username"
+              placeholder="Enter your username..."
+            />
+            <br />
+
+            <input
+              type="text"
+              id="nickname"
+              class="nickname"
+              placeholder="Enter your nickname..."
+            />
+            <br />
+
+            <input
+              type="email"
+              name="email"
+              class="email"
+              placeholder="Enter your email..."
+            />
+            <br />
+
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              class="message"
+              placeholder="Enter your message"
+            ></textarea>
+            <br />
+
+            <button class="btn">submit</button>
+          </form>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370878.7959984033!2d-106.72730958990692!3d33.112984943154146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2z0KHRmNC10LTQuNGa0LXQvdC1INCU0YDQttCw0LLQtQ!5e0!3m2!1ssr!2sde!4v1661247569690!5m2!1ssr!2sde"
+              width="500"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="first_text">
+        <h1>Conections</h1>
+        <div class="table_one">
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Securty</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Traning</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="secound_text">
+        <div class="logo">
+          <img src="img/logo/icon.png" alt="logo" />
+          <p>Freestyle</p>
+        </div>
+        <div class="text">
+          <small
+            >© Copyright by Nenad Maglovski,made for educational purposes
+            only.</small
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

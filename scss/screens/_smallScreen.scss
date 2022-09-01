@@ -1,0 +1,252 @@
+@import "../vector";
+
+@mixin small() {
+  //////////////////////////////////////////////////// NAVBAR //////////////////////////////////////////////////////
+
+  header {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    section {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        font-size: 1.5em;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .menu {
+    display: block;
+    margin: 0 1em;
+    text-align: center;
+  }
+
+  .nav {
+    visibility: hidden;
+    transition: 0.2s ease;
+    filter: blur(4px);
+  }
+
+  .nav.active {
+    visibility: visible;
+    filter: none;
+  }
+
+  //////////////////////////////////////////////////// FIRST SECTION //////////////////////////////////////////////////////
+  .first_section {
+    .img {
+      .centerd_text {
+        p {
+          font-size: 1em;
+        }
+        top: 83%;
+        left: 10%;
+      }
+    }
+  }
+
+  //////////////////////////////////////////////////// SECOND SECTION //////////////////////////////////////////////////////
+
+  .secound_section {
+    display: block;
+    .description {
+      width: 80%;
+      padding-top: 5em;
+      h1 {
+        font-size: 1em;
+        letter-spacing: 2px;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .img_exemple {
+    display: flex;
+    justify-content: space-evenly;
+    top: 8%;
+    padding: 0;
+    width: 90%;
+    .img_one {
+      img {
+        width: 80%;
+        height: 10em;
+        filter: blur(4px);
+      }
+    }
+    .img_two {
+      bottom: 0;
+      left: 0;
+      img {
+        width: 80%;
+        height: 10em;
+        filter: blur(4px);
+      }
+    }
+    .img_three {
+      bottom: 0;
+      img {
+        width: 80%;
+        height: 10em;
+        filter: blur(4px);
+      }
+    }
+  }
+
+  .img_exemple {
+    .img_one {
+      img:hover {
+        filter: blur(0);
+        transform: scale(1);
+      }
+    }
+    .img_two {
+      img:hover {
+        filter: blur(0);
+        transform: scale(1);
+      }
+    }
+    .img_three {
+      img:hover {
+        filter: blur(0);
+        transform: scale(1);
+      }
+    }
+  }
+
+  //////////////////////////////////////////////////// THIRD SECTION //////////////////////////////////////////////////////
+  .third_section {
+    width: 100%;
+    height: 520px;
+  }
+
+  .main_text {
+    h1 {
+      font-size: 1.5em;
+    }
+    small {
+      font-size: 1.2em;
+    }
+  }
+
+  .blog_text {
+    width: 90%;
+    margin: auto;
+    display: block;
+    .text {
+      font-size: 1em;
+    }
+    .user {
+      img {
+        width: 5em;
+        height: 5em;
+      }
+      p {
+        font-family: $navFont;
+        font-size: 1em;
+      }
+    }
+  }
+
+  .dots {
+    span {
+      width: 1em;
+      height: 1em;
+    }
+  }
+
+  //////////////////////////////////////////////////// FOURTH SECTION //////////////////////////////////////////////////////
+
+  .fourth_section {
+    height: 610px;
+    h1 {
+      padding-top: 3em;
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1em;
+      width: 90%;
+    }
+  }
+
+  .form_section {
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    .map {
+      iframe {
+        display: none;
+      }
+    }
+  }
+
+  form {
+    text-align: center;
+    input {
+      width: 250px;
+      height: 20px;
+    }
+
+    textarea {
+      width: 250px;
+      height: 40px;
+    }
+
+    .btn {
+      width: 270px;
+      height: 40px;
+    }
+  }
+
+  //////////////////////////////////////////////////// FOOTER ////////////////////////////////////////////////////
+
+  .first_text {
+    h1 {
+      font-size: 1em;
+    }
+    .table_one {
+      margin: 0 0;
+      ul {
+        padding: 0 0;
+        li {
+          padding: 0 5px;
+          a {
+            font-size: 0.9;
+          }
+        }
+      }
+    }
+  }
+
+  .secound_text {
+    .logo {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 1.5em;
+        height: 1.5em;
+        padding: 2.5em 1em 0 0;
+      }
+      p {
+        font-size: 2em;
+        letter-spacing: 2px;
+        font-family: $navFont;
+        color: $white;
+      }
+    }
+  }
+
+  .text {
+    small {
+      font-size: 0.5em;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "name": "Test ",
+      "username": "Test",
+      "nickname": "Test",
+      "email": "test@test.com",
+      "password": "TestTest",
+      "id": 1
+    },
+    {
+      "name": "TestName",
+      "username": "Test Username",
+      "nickname": "Test nickname",
+      "email": "test@test.com",
+      "message": "is this working",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "name": "Liam",
+      "surname": "Smith",
+      "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quas aspernatur provident deserunt beatae officia fuga excepturi,voluptas voluptate harum quis pariatur nam saepe quod. Itaque,nesciunt! Aut id iusto itaque laboriosam voluptate, quo repudiandae,illo officia excepturi in quam, iure distinctio quas molestiae ipsalaborum! Repellendus totam quis dignissimos?",
+      "img": "/img/blog_img/user-.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Noah",
+      "surname": "Johnson",
+      "text": "Mr. and Mrs. Charly were on a tour to Europe. They were travelling on a guided tour to five countries. They were going to travel through The Netherland, Belgium, Germany, Switzerland, and France for two weeks.Te guide for the tour was a Swiss. On the day of the travel the guide told them to check their passports, their traveler cheques, and their foreign cash. He told them to keep them safely.",
+      "img": "/img/blog_img/user-.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Liam",
+      "surname": "Williams",
+      "text": "They traveled in a comfortable coach with a toilet, music, and video. The guide stopped the coach at many famous places. He explained the cultural importance of the places. They stayed in big hotels for the night and ate in the restaurants.",
+      "img": "/img/blog_img/user-.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Oliver",
+      "surname": "Brown",
+      "text": "Once three fish lived in a pond. One evening, some fishermen passed by the pond and saw the fish. “This pond is full of fish”, they told each other excitedly. “we have never fished here before. We must come back tomorrow morning with our nets and catch these fish!” So saying, the fishermen left.When the eldest of the three fish heard this, he was troubled. He called the other fish together and said.",
+      "img": "/img/blog_img/user-.jpg"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

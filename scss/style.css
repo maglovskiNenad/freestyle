@@ -1,0 +1,813 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #c4e8c2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header section {
+  text-align: center;
+}
+header section img {
+  max-width: 40%;
+  margin-top: 0.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+nav {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+nav ul li {
+  list-style: none;
+  font-size: xx-large;
+  padding: 0 1em;
+  cursor: pointer;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+nav ul li:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #46a094;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+nav ul li:hover:after {
+  transform: scale(1);
+}
+nav ul li:after {
+  transform-origin: 100% 50%;
+}
+
+.menu {
+  display: none;
+  margin-top: 0;
+}
+.menu span {
+  width: 40px;
+  height: 4px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.menu span:nth-child(1) {
+  margin-top: -10px;
+}
+.menu span:nth-child(3) {
+  margin-top: 10px;
+}
+
+.menu.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-15.1px);
+  box-shadow: none;
+}
+.menu.active span:nth-child(2) {
+  display: none;
+}
+.menu.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-12.4px);
+  box-shadow: none;
+}
+
+.first_section .img img {
+  width: 100%;
+  height: 825px;
+}
+.first_section .img .centerd_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -45%);
+  color: #c4e8c2;
+  -webkit-animation-name: moving;
+          animation-name: moving;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+.first_section .img .centerd_text p {
+  font-family: "Rubik Maze", cursive;
+  font-size: 7em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+@-webkit-keyframes moving {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 411px;
+  }
+}
+
+@keyframes moving {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 411px;
+  }
+}
+.secound_section {
+  width: 100%;
+  height: 820px;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #46a094;
+}
+.secound_section .description {
+  margin: auto;
+  width: 30%;
+  word-break: break-word;
+}
+.secound_section .description h1 {
+  font-size: 3em;
+  letter-spacing: 5px;
+  font-family: "Rubik Maze", cursive;
+  text-transform: uppercase;
+}
+.secound_section .description p {
+  word-break: break-text;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.img_exemple {
+  position: relative;
+  top: 12%;
+  width: 50%;
+  margin: auto;
+}
+.img_exemple .img_one img {
+  width: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 5px;
+  border: 5px solid rgba(196, 232, 194, 0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: blur(4px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.img_exemple .img_two {
+  position: relative;
+  bottom: 7em;
+  left: 48%;
+}
+.img_exemple .img_two img {
+  width: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 5px;
+  border: 5px solid rgba(196, 232, 194, 0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: blur(4px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.img_exemple .img_three {
+  position: relative;
+  bottom: 10em;
+}
+.img_exemple .img_three img {
+  width: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 5px;
+  border: 5px solid rgba(196, 232, 194, 0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: blur(4px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.img_exemple .img_one img:hover {
+  filter: blur(0);
+  transform: scale(1.1);
+}
+.img_exemple .img_two img:hover {
+  filter: blur(0);
+  transform: scale(1.1);
+}
+.img_exemple .img_three img:hover {
+  filter: blur(0);
+  transform: scale(1.1);
+}
+
+.third_section {
+  width: 100%;
+  height: 820px;
+  display: block;
+  text-align: center;
+}
+
+.main_text {
+  text-transform: uppercase;
+  font-family: "Rubik Maze", cursive;
+  padding-top: 5em;
+}
+.main_text h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+.main_text small {
+  letter-spacing: 2px;
+  font-size: 1em;
+}
+
+.blog_text {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+.blog_text .text {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+  padding: 1em;
+  letter-spacing: 3px;
+}
+.blog_text .user {
+  display: flex;
+  justify-content: center;
+}
+.blog_text .user img {
+  width: 10em;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.blog_text .user p {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1em;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: auto;
+}
+.dots span {
+  margin: 1em;
+  position: relative;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
+}
+
+.fourth_section {
+  display: block;
+  width: 100%;
+  height: 820px;
+}
+.fourth_section h1 {
+  font-size: 3em;
+  font-family: "Rubik Maze", cursive;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2em;
+}
+.fourth_section p {
+  font-size: 2em;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.form_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form_section .map iframe {
+  padding: 1em;
+}
+
+form input {
+  margin: 0.5em 0;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: bolder;
+  font-size: 1em;
+  border: 1px solid #c4e8c2;
+  padding: 0.5em;
+  width: 350px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  transition: 0.3s ease-in-out;
+}
+form textarea {
+  margin: 0.5em 0;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: bolder;
+  font-size: 1em;
+  border: 1px solid #c4e8c2;
+  padding: 0.5em;
+  width: 350px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  transition: 0.3s ease-in-out;
+  overflow: scroll;
+}
+form .btn {
+  width: 367px;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: bolder;
+  font-size: 1em;
+  border: 1px solid #46a094;
+  padding: 0.5em;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  background-color: #46a094;
+  color: #ffffff;
+}
+
+input.active {
+  border: 1px solid red;
+  background-color: red;
+  opacity: 0.5;
+}
+
+.message.active {
+  border: 1px solid red;
+  background-color: red;
+  opacity: 0.5;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #aecfa4;
+}
+
+.first_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.first_text h1 {
+  font-family: "Rubik Maze", cursive;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.first_text .table_one {
+  margin: 1em 1em;
+  text-align: left;
+}
+.first_text .table_one ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.first_text .table_one ul li {
+  list-style: none;
+  padding: 0 1em;
+}
+.first_text .table_one ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: bolder;
+}
+.first_text .table_one ul li:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #46a094;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.first_text .table_one ul li:hover:after {
+  transform: scale(1);
+}
+.first_text .table_one ul li:after {
+  transform-origin: 100% 50%;
+}
+
+.secound_text .logo {
+  display: flex;
+  justify-content: center;
+}
+.secound_text .logo img {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 2.5em 1em 0 0;
+}
+.secound_text .logo p {
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  color: #ffffff;
+}
+
+.text {
+  padding: 1em 0;
+}
+.text small {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .first_section .img .centerd_text p {
+    font-size: 4.8em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  header {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  header section img {
+    display: none;
+  }
+  nav ul li {
+    font-size: 2.5em;
+    padding: 0 10px;
+  }
+  .menu {
+    display: block;
+    margin: 0 1em;
+    text-align: center;
+  }
+  .nav {
+    visibility: hidden;
+    transition: 0.2s ease;
+    filter: blur(4px);
+  }
+  .nav.active {
+    visibility: visible;
+    filter: none;
+  }
+  .first_section .img .centerd_text {
+    top: 83%;
+    left: 10%;
+  }
+  .first_section .img .centerd_text p {
+    font-size: 3.7em;
+  }
+  .secound_section {
+    display: block;
+  }
+  .secound_section .description {
+    width: 80%;
+    padding-top: 10em;
+  }
+  .secound_section .description h1 {
+    font-size: 1.7em;
+    letter-spacing: 2px;
+  }
+  .secound_section .description p {
+    font-size: 1em;
+  }
+  .img_exemple {
+    display: flex;
+    justify-content: space-evenly;
+    top: 15%;
+    padding: 0;
+    width: 90%;
+  }
+  .img_exemple .img_one img {
+    width: 80%;
+    height: 10em;
+    filter: blur(4px);
+  }
+  .img_exemple .img_two {
+    bottom: 0;
+    left: 0;
+  }
+  .img_exemple .img_two img {
+    width: 80%;
+    height: 10em;
+    filter: blur(4px);
+  }
+  .img_exemple .img_three {
+    bottom: 0;
+  }
+  .img_exemple .img_three img {
+    width: 80%;
+    height: 10em;
+    filter: blur(4px);
+  }
+  .third_section {
+    width: 100%;
+    height: 520px;
+  }
+  .main_text h1 {
+    font-size: 1.7em;
+  }
+  .main_text small {
+    font-size: 1em;
+  }
+  .blog_text {
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: justify;
+  }
+  .blog_text .text {
+    font-size: 1em;
+  }
+  .blog_text .user img {
+    width: 5em;
+    height: 5em;
+  }
+  .blog_text .user p {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 1em;
+  }
+  .dots span {
+    width: 1em;
+    height: 1em;
+  }
+  .fourth_section {
+    height: 650px;
+  }
+  .fourth_section h1 {
+    font-size: 1.7em;
+    padding-top: 2.9em;
+  }
+  .fourth_section p {
+    font-size: 1em;
+  }
+  .form_section .map iframe {
+    padding: 1em;
+    width: 300px;
+    height: 300px;
+  }
+  form input {
+    width: 350px;
+    height: 20px;
+  }
+  form textarea {
+    width: 350px;
+    height: 40px;
+  }
+  form .btn {
+    width: 367px;
+    height: 40px;
+  }
+  .first_text h1 {
+    font-size: 1em;
+  }
+  .first_text .table_one {
+    margin: 0 0;
+  }
+  .first_text .table_one ul {
+    padding: 0 0;
+  }
+  .first_text .table_one ul li {
+    padding: 0 5px;
+  }
+  .first_text .table_one ul li a {
+    font-size: 0.9;
+  }
+  .secound_text .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .secound_text .logo img {
+    width: 1.5em;
+    height: 1.5em;
+    padding: 2.5em 1em 0 0;
+  }
+  .secound_text .logo p {
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    color: #ffffff;
+  }
+  .text small {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  header {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  header section img {
+    display: none;
+  }
+  nav ul li {
+    font-size: 1.5em;
+    padding: 0 10px;
+  }
+  .menu {
+    display: block;
+    margin: 0 1em;
+    text-align: center;
+  }
+  .nav {
+    visibility: hidden;
+    transition: 0.2s ease;
+    filter: blur(4px);
+  }
+  .nav.active {
+    visibility: visible;
+    filter: none;
+  }
+  .first_section .img .centerd_text {
+    top: 83%;
+    left: 10%;
+  }
+  .first_section .img .centerd_text p {
+    font-size: 1em;
+  }
+  .secound_section {
+    display: block;
+  }
+  .secound_section .description {
+    width: 80%;
+    padding-top: 5em;
+  }
+  .secound_section .description h1 {
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+  .secound_section .description p {
+    font-size: 1em;
+  }
+  .img_exemple {
+    display: flex;
+    justify-content: space-evenly;
+    top: 8%;
+    padding: 0;
+    width: 90%;
+  }
+  .img_exemple .img_one img {
+    width: 80%;
+    height: 10em;
+    filter: blur(4px);
+  }
+  .img_exemple .img_two {
+    bottom: 0;
+    left: 0;
+  }
+  .img_exemple .img_two img {
+    width: 80%;
+    height: 10em;
+    filter: blur(4px);
+  }
+  .img_exemple .img_three {
+    bottom: 0;
+  }
+  .img_exemple .img_three img {
+    width: 80%;
+    height: 10em;
+    filter: blur(4px);
+  }
+  .img_exemple .img_one img:hover {
+    filter: blur(0);
+    transform: scale(1);
+  }
+  .img_exemple .img_two img:hover {
+    filter: blur(0);
+    transform: scale(1);
+  }
+  .img_exemple .img_three img:hover {
+    filter: blur(0);
+    transform: scale(1);
+  }
+  .third_section {
+    width: 100%;
+    height: 520px;
+  }
+  .main_text h1 {
+    font-size: 1.5em;
+  }
+  .main_text small {
+    font-size: 1.2em;
+  }
+  .blog_text {
+    width: 90%;
+    margin: auto;
+    display: block;
+  }
+  .blog_text .text {
+    font-size: 1em;
+  }
+  .blog_text .user img {
+    width: 5em;
+    height: 5em;
+  }
+  .blog_text .user p {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 1em;
+  }
+  .dots span {
+    width: 1em;
+    height: 1em;
+  }
+  .fourth_section {
+    height: 610px;
+  }
+  .fourth_section h1 {
+    padding-top: 3em;
+    font-size: 1.5em;
+  }
+  .fourth_section p {
+    font-size: 1em;
+    width: 90%;
+  }
+  .form_section {
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .form_section .map iframe {
+    display: none;
+  }
+  form {
+    text-align: center;
+  }
+  form input {
+    width: 250px;
+    height: 20px;
+  }
+  form textarea {
+    width: 250px;
+    height: 40px;
+  }
+  form .btn {
+    width: 270px;
+    height: 40px;
+  }
+  .first_text h1 {
+    font-size: 1em;
+  }
+  .first_text .table_one {
+    margin: 0 0;
+  }
+  .first_text .table_one ul {
+    padding: 0 0;
+  }
+  .first_text .table_one ul li {
+    padding: 0 5px;
+  }
+  .first_text .table_one ul li a {
+    font-size: 0.9;
+  }
+  .secound_text .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .secound_text .logo img {
+    width: 1.5em;
+    height: 1.5em;
+    padding: 2.5em 1em 0 0;
+  }
+  .secound_text .logo p {
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    color: #ffffff;
+  }
+  .text small {
+    font-size: 0.5em;
+  }
+}/*# sourceMappingURL=style.css.map */
