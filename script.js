@@ -257,11 +257,3 @@ const getComents = function () {
 
 getComents();
 
-//ZADACI KOJI TREBA DA SE ODRADE
-
-// form treba da se promeni da bude vid poruke koja moze da se posalje na server
-// validacija na formi postoji pokusaj da je poboljsas
-// mali,srednji i veliki ekran nisu uradjeni
-// footer nije uradjen ujedno bi trebao na tekstu sam tekst ima animaciju koja je vec postojeca ako ne bar da pointer bude cursor
-// pokusaj da slijder bude na poziv od json podatka po mogucstu da bude isti
-// ako je ikako moguce da sve generalno bude responsive
